@@ -1,0 +1,98 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+
+
+/* variable css */
+:root {
+  --header-height: 3.5rem;
+  --first-color: #47949c;
+  --alt-color: #393e41;
+  --lite-color: #d3d0cb;
+  --second-color: #ffc300;
+  --title-color: #587b7f;
+  --text-color: #1e2019;
+  --lite-text-color: #eff6e0;
+  --border-color: #1e2019;
+  --body-color: #f8f9fa;
+  --contain-color: #f8f9fa;
+
+  --body-font: 'Nunito', sans-serif;
+  --xl-font: 37px;
+  --h1-font: 24px;
+  --h2-font: 20px;
+  --h3-font: 16px;
+  --nm-font: 14px;
+  --s-font: 12.4px;
+  --xs-font: 11.6px;
+  --font-md: 400;
+  --font-bold: 600;
+
+  --z-tooltip: 10;
+  --z-index: 100;
+}
+
+/* media queries: large-screen, tab-screen, mobile-screen */
+
+@media screen and (min-width: 1024px) {
+  :root {
+    --body-font: ;
+    --xl-font: 64px;
+    --h1-font: 36px;
+    --h2-font: 26px;
+    --h3-font: 20px;
+    --nm-font: 16.4px;
+    --s-font: 14px;
+    --xs-font: 12.6px;
+  }
+}
+
+/* base css */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--body-font);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: var(--nm-font);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3 {
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input, button {
+    font-family: var(--body-font);
+    outline: none; 
+    border: none;
+}
+
+
+/* recycle css (reusable) */
+
+
+/* theme */
+
+
+/* might need to change hex to hsl for dark and light mode */
