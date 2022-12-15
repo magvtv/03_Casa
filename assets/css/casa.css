@@ -513,29 +513,96 @@ button {
 
 
 .contact-container {
-    row-gap: 32px;
+    /* row-gap: 32px; */
+    padding: -10px 20px;
 }
 
 .contact-images {
     position: relative;
     display: flex;
     justify-content: center;
+    /* width: 500px; */
     align-items: center;
 }
 
 .contact-img {
-    position: absolute;
-    width: 250px;
-    height: 300px;
+    display: none;
+    /* margin-top: -1000px; */
+    /* position: absolute; */
+    width: 300px;
+    height: 400px;
     overflow: hidden;
     inset: 0;
     margin: auto;
-    box-shadow: 0 16px 32px hsla(54, 55%, 27%, 0.582));
+    box-shadow: 0 16px 32px hsla(54, 55%, 27%, 0.582);
 }
 
 .contact-data {
+    margin-top: -20px;
     font-size: var(--s-font);
-    
+    margin-bottom: 40px;
+    padding: 10px 20px;
 }
+
+.row {
+    padding: 10px 20px;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--lite-color);
+  border-radius: 4px;
+  resize: vertical;
+  
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-size: var(--nm-font);
+}
+
+input[type=submit] {
+    width: 75px;
+  background-color: var(--first-color);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  transition: .2s;
+  transform: ease-in;
+}
+
+input[type=submit]:hover {
+  background-color: var(--second-color);
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 
 /* might need to change hex to hsl for dark and light mode */
