@@ -8,13 +8,13 @@ window.addEventListener('scroll', headerScroll);
 
 const accordionItem = document.querySelectorAll('.accordion-item');
 accordionItem.forEach((item) => {
-    const accordionHeader = item.querySelector('.about-accordion-header');
-    accordionHeader.addEventListener('click', () => {
+    const accordionHeaderIcon = item.querySelector('.about-accordion-arrow');
+    accordionHeaderIcon.addEventListener('click', () => {
         const openItem = document.querySelector('.accordion-open');
-        toggleItem(item);
-
+        
+        toggleItem(item)
         if (openItem && openItem !== item) {
-            toggleItem(openItem)
+            toggleItem(openItem);
         }  
             
             
@@ -22,8 +22,8 @@ accordionItem.forEach((item) => {
 })
 
 const toggleItem = (item) => {
-    const accordionContent = item.querySelector('.accordion - content');
-    if (item.classList.contain('accordion-open')) { 
+    const accordionContent = item.querySelector('.accordion-content');
+    if (item.classList.contains('accordion-open')) { 
         accordionContent.removeAttribute('style');
         item.classList.remove('accordion-open');
     } else {
@@ -31,3 +31,18 @@ const toggleItem = (item) => {
         item.classList.add('accordion-open');
     }
 }
+
+
+let swiperPopular = new Swiper(".popular-container", {
+    spaceBetween: 30,
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    loop: true,
+
+    navigation: {
+        nextEl: "swiper-button-next",
+        prevEl: "swiper-button-prev",
+
+    }
+})

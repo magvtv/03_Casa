@@ -1,13 +1,13 @@
 <?php
 echo htmlspecialchars($_SERVER["PHP_SELF"]);
-$firstname = $surname = $county = $comment = $website = "";
+$firstname = $surname = $county = $comment = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $name = test_input($_POST["name"]);
-  $email = test_input($_POST["email"]);
-  $website = test_input($_POST["website"]);
+  $name = test_input($_POST["firstname"]);
+  $email = test_input($_POST["surname"]);
+  $county = test_input($_POST["county"]);
   $comment = test_input($_POST["comment"]);
-  $gender = test_input($_POST["gender"]);
+
 }
 
 function test_input($data) {

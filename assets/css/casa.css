@@ -373,7 +373,7 @@ button {
   padding: 16px 0 80px;
 }
 .popular-card {
-  width: 450px;
+  width: 25em;
   height: auto;
   background-color: var(--contain-color);
   padding: 24px;
@@ -384,7 +384,7 @@ button {
 }
 
 .popular-card:hover {
-  box-shadow: 0 12px 16px hsla(54, 55%, 27%, 0.582);
+  box-shadow: 0 12px 16px hsla(60, 11%, 4%, 0.582);
 }
 .popular-house-img {
   border-radius: 55px 10px 55px 10px;
@@ -429,7 +429,7 @@ button {
 
 
 .about-container {
-    row-gap: 48px;
+    row-gap: 3rem;
 }
 
 .about-images {
@@ -440,7 +440,8 @@ button {
 
 .about-data {
     font-size: var(--s-font);
-    line-height: 22px;
+    line-height: 1.4rem;
+    /* margin-bottom: 1.5rem; */
 }
 
 .about-accordion {
@@ -453,11 +454,13 @@ button {
     background-color: var(--body-color);
     /* border: 1px solid var(--border-color); */
     border-radius: 10px;
-    padding: 16px 12px;
+    padding: 1em .75em;
+    margin-bottom: 2em;
 }
 
 .about-accordion-header {
     display: flex;
+    justify-content: ceniconter;
     align-items: center;
     cursor: pointer;
 }
@@ -466,8 +469,8 @@ button {
     color: var(--first-color);
     align-items: center;
     justify-content: center;
-    margin-right: 5px;
-    font-size: 18px;
+    margin-right: .5em;
+    font-size: 1.25em;
     transition: .3s;
 }
 
@@ -477,8 +480,8 @@ button {
 
 .about-accordion-arrow {
     display: inline-flex;
-    font-size: 25px;
-    border-radius: 10px;
+    font-size: 1.75em;
+    border-radius: .45em;
     padding: 2px 4px;
     color: var(--second-color);
     background-color:hsla(52, 4%, 38%, 0.582);    
@@ -493,7 +496,7 @@ button {
 
 .accordion-data {
     font-size: var(--s-font);
-    padding: 20px 40px 0 44px;
+    padding: 1.25em 2.5em 0 2.75em;
 }
 
 .accordion-content {
@@ -503,12 +506,18 @@ button {
 }
 
 .accordion-open {
-    box-shadow: 0 12px 32px rgba(6, 46, 46, 0.1);
+    box-shadow: 0 .75em 2em rgba(6, 46, 46, 0.1);
+}
+
+.accordion-open, .about-accordion-arrow {
+    box-shadow: 0 .25em .25em rgba(22, 70, 62, 0.1);
 }
 
 
-.accordion-open .about-accordion-icon {
-    box-shadow: 0 4px 4px rgba(22, 70, 62, 0.1);
+.accordion-open .about-accordion-arrow i{
+    /* box-shadow: 0 .25em .25em rgba(22, 70, 62, 0.1); */
+    transform: rotate(180deg);
+
 }
 
 
@@ -604,5 +613,7 @@ input[type=submit]:hover {
     width: 100%;
     margin-top: 0;
   }
-
-/* might need to change hex to hsl for dark and light mode */
+}
+/* 
+might need to change hex to hsl for dark and light mode
+ */
