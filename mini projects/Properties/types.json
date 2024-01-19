@@ -1,0 +1,4 @@
+{
+	"Multi Family": ["Condomnimiums", "Duplex", "Townhouses", "Apartments", "Multi-level Apartments"],
+	"Single Family": ["Mobile Homes", "Multi-level Apartments", "Room Rentals"]
+}
