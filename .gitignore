@@ -3,3 +3,5 @@ notes.txt
 data/
 node_modules/
 package-lock.json
+images/concepts/
+assets/css/main.css.map
