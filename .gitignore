@@ -1,2 +1,5 @@
 .vscode/
 notes.txt
+data/
+node_modules/
+package-lock.json
