@@ -10,6 +10,19 @@ function scrollHeader() {
 
 window.addEventListener('scroll', scrollHeader)
 
+
+var propertiesSwiper = new Swiper(".properties__container", {
+    spaceBetween: 32,
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: auto,
+    loop: true,
+    navigation: {
+        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
+    },
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     fetch('assets/content/data.json')
         .then(response => response.json)
